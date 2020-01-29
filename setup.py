@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="sssapi-pkg", # Replace with your own username
+    name="snowshoe-stamp-sdk",
     version="0.1.0",
     author="Snowshoe Stamps",
     author_email="engineering@snowshoestamp.com",
     description="SnowShoeStamp Client Api Library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/snowshoestamp/python_sdk",
+    url="https://github.com/snowshoestamp/snowshoe-sdk-python",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 2.7",
