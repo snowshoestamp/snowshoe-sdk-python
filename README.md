@@ -42,6 +42,6 @@ The information returned here is the data about the stamp relating to the points
 
 # More info
 
--This sdk extension is made for simplistic retrieval of stamp data from our servers through the python language when your server uses this as it's primary code, such as a django server structure.
--For more info on how to use our product visit: 
+- This sdk extension is made for simplistic retrieval of stamp data from our servers through the python language when your server uses this as it's primary code, such as a django server structure.
+- For more info on how to use our product visit: 
     https://snowshoe.readme.io/v3.0/docs
