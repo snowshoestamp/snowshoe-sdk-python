@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="snowshoe-stamp-sdk",
-    version="0.1.0",
+    version="3.0.0",
     author="Snowshoe Stamps",
     author_email="engineering@snowshoestamp.com",
     description="SnowShoeStamp Client Api Library",
