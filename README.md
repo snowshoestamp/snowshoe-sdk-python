@@ -1,5 +1,5 @@
 # Overview
-This is a sdk package that can be used in your python code as a plugin to be able to transfer a properly encoded string that represents a stamps points to SnowShoe servers and get a response with stamp information.
+This is a sdk package that can be used in your python code as a plugin to be able to transfer a properly encoded string that represents stamp points to SnowShoe servers and get a response with stamp information.
 
 # Installing
 
