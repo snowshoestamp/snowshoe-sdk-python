@@ -21,7 +21,7 @@ You can install `snowshoe-stamp-sdk` via [the PIP package](https://pypi.org/proj
     $ python
     >>> from sssapi import Client
     >>> client = Client(api_key="INSERT_YOUR_API_KEY_HERE")
-    >>> response = client.call({"data":"W1swLDBdLFszNiwzNl0sWzM2LDBdLFsyMCw0XSxbOCwzNl1d"})
+    >>> response = client.call("W1swLDBdLFszNiwzNl0sWzM2LDBdLFsyMCw0XSxbOCwzNl1d")
     >>> print(response)
 ```
 
