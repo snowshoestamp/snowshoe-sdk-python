@@ -9,9 +9,9 @@ You can install `snowshoe-stamp-sdk` via [the PIP package](https://pypi.org/proj
 
 # Getting Started
 
-1. To get the app running, you will need to create an app on our site. Go to https://app.snowshoestamp.com/ and Sign In if you have an account or sign up if you don't have one. Once you are logged in, click “New App” to create a new one.
+1. To be able to use this SDK tool you need to create an app first. You can learn how to [HERE](https://snowshoe.readme.io/v3.0/docs/part-1-create-a-snowshoe-application)
 
-2. After you have created the new application look at it's settings and you will find 'API Key 1' and 'API Key 2'. These can both be used to pass through as the needed param `api_key` to get stamp data back from our servers.
+2. Make sure you get the API Key that you will need to run requests. You can learn more about the API Keys [HERE](https://snowshoe.readme.io/v3.0/docs/part-1-create-a-snowshoe-application#get-api-keys)
 
 3. The stamp data passed to our servers is encoded in Base64 and then sent through as form-data. If you use our snowshoe jquery plugin to capture stamp touch point data ( located here: https://cdn.snowshoestamp.com/snowshoe-jquery/0.3.3/jquery.snowshoe.js ) then you don't have to worry about this because the data passed through will already be encoded. In this example we will use mock data of points in Base64 (`W1swLDBdLFszNiwzNl0sWzM2LDBdLFsyMCw0XSxbOCwzNl1d`) to get a stamp return when we send the request.
 
