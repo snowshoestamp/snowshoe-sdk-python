@@ -13,15 +13,15 @@ You can install `snowshoe-stamp-sdk` via [the PIP package](https://pypi.org/proj
 
 2. Make sure you get the API Key that you will need to run requests. You can learn more about the API Keys [HERE](https://snowshoe.readme.io/v3.0/docs/part-1-create-a-snowshoe-application#get-api-keys)
 
-3. The stamp data passed to our servers is encoded in Base64 and then sent through as form-data. If you use our snowshoe jquery plugin to capture stamp touch point data ( located here: https://cdn.snowshoestamp.com/snowshoe-jquery/0.3.3/jquery.snowshoe.js ) then you don't have to worry about this because the data passed through will already be encoded. In this example we will use mock data of points in Base64 (`W1swLDBdLFszNiwzNl0sWzM2LDBdLFsyMCw0XSxbOCwzNl1d`) to get a stamp return when we send the request.
+3. The stamp data passed to our servers is an array of x,y coordinates. These represent the touch points from the stamp that you are trying to get data for. If you are using our front-end jquery plugin (more info on this located [HERE](https://snowshoe.readme.io/v3.0/docs/maintained-libraries)) to capture stamp touch point data, then you can just pass that data directly through for the request with no need to change.
 
-4. Here is a simple example that uses the mock data (`W1swLDBdLFszNiwzNl0sWzM2LDBdLFsyMCw0XSxbOCwzNl1d`) listed in the last step to test that the plugin sdk installed and is working properly.
+4. Here is a simple example that uses the mock data (`[[264,172],[267,371],[242,286],[69,375],[66,221]]`) to test that the plugin sdk installed and is working properly.
 
 ```
     $ python
     >>> from sssapi import Client
     >>> client = Client(api_key="INSERT_YOUR_API_KEY_HERE")
-    >>> response = client.call("W1swLDBdLFszNiwzNl0sWzM2LDBdLFsyMCw0XSxbOCwzNl1d")
+    >>> response = client.call("[[264,172],[267,371],[242,286],[69,375],[66,221]]")
     >>> print(response)
 ```
 
@@ -38,7 +38,7 @@ This should print out an unformatted JSON string showing a 'serial' of 'DEVA'. F
 }
 ```
 
-The information returned here is the data about the stamp relating to the points and api key you sent in the request.
+The information returned here is the data about the stamp relating to the points and api key you sent in the request. For more info on stamp data requests and returns go [HERE](https://snowshoe.readme.io/v3.0/docs/part-3-api-request)
 
 # More info
 
