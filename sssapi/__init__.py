@@ -19,5 +19,9 @@ class Client(object):
             return {"error": "Server error while contacting %s. Data: %s" % (
                 self.get_api_url(method=method), str(json)),
                     "code": 20}
+        elif response.status_code >= 400 and response.status_code < 500:
+            return {"error": "Authentication Error %s. Data: %s" % (
+                self.get_api_url(method=method), str(json)),
+                    "code": 40}
         else:
             return response.json()
